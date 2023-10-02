@@ -13,22 +13,22 @@ export const Media = () => {
       className={`bg-gray-200 justify-between items-center flex py-1 px-5 w-full`}
     >
       <div className="flex items-center sm:ml-8">
-        <div className="bg-black p-2 text-white text-lg rounded-full mx-2 cursor-pointer">
+        <div className="bg-black p-1 text-white text-lg rounded-full mx-2 cursor-pointer">
           <a href="foo">
             <FaFacebookF />
           </a>
         </div>
-        <div className="bg-black p-2 text-white text-lg rounded-full mx-2 cursor-pointer">
+        <div className="bg-black p-1 text-white text-lg rounded-full mx-2 cursor-pointer">
           <a href="foo">
             <FaTwitter />
           </a>
         </div>
-        <div className="bg-black p-2 text-white text-lg rounded-full mx-2 cursor-pointer">
+        <div className="bg-black p-1 text-white text-lg rounded-full mx-2 cursor-pointer">
           <a href="foo">
             <FaInstagram />
           </a>
         </div>
-        <div className="bg-black p-2 text-white text-lg rounded-full mx-2 cursor-pointer">
+        <div className="bg-black p-1 text-white text-lg rounded-full mx-2 cursor-pointer">
           <a href="foo">
             <FaLinkedinIn />
           </a>

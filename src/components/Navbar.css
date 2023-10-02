@@ -1,0 +1,13 @@
+.transition-transform {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.-translate-y-16 {
+  transform: translateY(-3rem);
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}

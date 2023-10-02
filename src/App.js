@@ -2,6 +2,7 @@ import { Media } from "./components/Media";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import "./App.css";
+import { Footer } from "./container/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Media />
       <Navbar />
       <Home />
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
+import "./Navbar.css";
 
 export const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -7,7 +8,7 @@ export const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
 
   const handleScroll = () => {
-    window.scrollY > 50 ? setScrolling(true) : setScrolling(false);
+    window.scrollY > 30 ? setScrolling(true) : setScrolling(false);
   };
 
   useEffect(() => {
@@ -23,27 +24,25 @@ export const Navbar = () => {
       title: "Home",
     },
     {
-      id: "features",
-      title: "Features",
-    },
-    {
       id: "product",
       title: "Product",
     },
     {
-      id: "clients",
-      title: "Clients",
+      id: "subscribe",
+      title: "Subscribe",
     },
   ];
 
   return (
     <nav
       className={`${
-        scrolling ? "top-0" : ""
-      } shadow-lg bg-white w-full flex py-3 justify-between items-center fixed px-6`}
+        scrolling ? "-translate-y-16" : "translate-y-0"
+      } transition-transform transform shadow-lg bg-white w-full flex py-3 justify-between items-center fixed px-6`}
     >
       {/* Logo */}
-      <h1 className="text-3xl text-primary">Hello</h1>
+      <h1 className="text-3xl text-primary">
+        <a href="#home">Hello</a>
+      </h1>
 
       {/* Desktop Navigation */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">

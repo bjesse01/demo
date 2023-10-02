@@ -2,7 +2,10 @@ import React from "react";
 
 export const Front = () => {
   return (
-    <div className="flex w-full h-screen items-center p-10 text-white">
+    <div
+      className="flex w-full h-screen items-center p-10 text-white"
+      id="home"
+    >
       <div>
         <h1 className="font-bold text-4xl tracking-wide mb-3">Shop with us</h1>
         <p className="sm:w-[700px] text-xl font-normal mb-4">
